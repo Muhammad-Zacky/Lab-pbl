@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Kuesioner Mahasiswa</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Untuk grafik -->
+</head>
+<body>
+    <h1>Survey Kuesioner Mahasiswa</h1>
+    
+    <!-- Form input data -->
+    <form id="surveyForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" required><br><br>
+
+        <label for="answer">Jawaban:</label>
+        <input type="text" id="answer" name="answer" required><br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+
+    <hr>
+
+    <!-- Tabel untuk menampilkan data -->
+    <h2>Data Kuesioner</h2>
+    <table id="dataTable" border="1">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Jawaban</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data akan diisi lewat JavaScript -->
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Grafik -->
+    <h2>Grafik Jawaban Kuesioner</h2>
+    <canvas id="kuesionerChart" width="400" height="200"></canvas>
+
+    <script src="app.js"></script> <!-- Menyambungkan file JS -->
+</body>
+</html>
